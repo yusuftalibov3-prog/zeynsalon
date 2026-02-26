@@ -21,7 +21,6 @@ const WHATSAPP_LINK = "https://wa.me/905451830202";
 
 const navLinks = [
   { name: 'Hizmetler', href: '#hizmetler' },
-  { name: 'Galeri', href: '#galeri' },
   { name: 'İletişim', href: '#iletisim' },
 ];
 
