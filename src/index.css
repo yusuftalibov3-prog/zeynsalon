@@ -5,9 +5,10 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", serif;
   
-  --color-gold: #d4af37;
-  --color-beige: #e5d5b0;
-  --color-anthracite: #141414;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4CF67;
+  --color-rich-black: #0B0B0B;
+  --color-anthracite: #1A1A1A;
 }
 
 @layer base {
@@ -15,6 +16,15 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-black text-white font-sans antialiased;
+    @apply bg-rich-black text-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .gold-glow {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+  .gold-glow-hover:hover {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
   }
 }
